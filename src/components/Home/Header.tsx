@@ -8,7 +8,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="relative bg-white bg-[url('/assets/bg-lines.png')] bg-no-repeat bg-right-top shadow-md">
+        <header className="relative bg-white bg-[url('/assets/bg-lines.png')] bg-no-repeat bg-right-top shadow-sm">
             <div className="flex justify-between items-center px-6 py-4 lg:px-12">
                 {/* Left Logo */}
                 <a href="#">
@@ -51,7 +51,7 @@ const Navbar = ({ isOpen }: { isOpen: boolean }) => {
     }, []);
 
     return (
-        <nav className={`bg-white shadow-md w-full  ${isScrolled ? "fixed -top-10 transition-all duration-500 ease-in-out transform translate-y-10 opacity-100" : "relative"}`}>
+        <nav className={`bg-white  w-full  ${isScrolled ? "fixed -top-10 transition-all duration-500 ease-in-out transform translate-y-10 opacity-100" : "relative"}`}>
             <div className="container mx-auto flex items-center justify-center md:p-4">
                 {/* Navigation Links */}
                 <div
