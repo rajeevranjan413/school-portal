@@ -5,7 +5,7 @@ import React from "react";
 const HomePage = () => {
     return (
         <div className=" text-black md:px-8 ">
-            <div className="flex justify-between flex-col md:flex-row mb-[200px] md:m-0">
+            <div className="flex justify-between flex-col md:flex-row pb-[200px] md:m-0">
                 <div className="w-full md:w-[25%] p-4 ">
                     <div className="bg-white rounded-md flex flex-col font-bold text-lg px-4">
                         <div className="text-center bg-[#d0efff] border border-[#1a9de1] rounded-b-full mb-4 py-2">
@@ -98,11 +98,11 @@ const interviewData = [
 
 const InterviewButtons = () => {
     return (
-        <div className="flex flex-col gap-6 fixed bottom-0 left-0 w-full p-1 md:static bg-white md:bg-transparent">
+        <div className="flex flex-col gap-4 md:gap-6 fixed bottom-0 left-0 w-full px-1 py-2 md:static bg-white md:bg-transparent">
             {interviewData.map((item) => (
-                <button key={item.id} className="w-full bg-green-600 text-white rounded-full py-2 p-2">
+                <button key={item.id} className="w-full bg-green-600 text-white rounded-full py-2 p-2 text-xs md:text-base">
 
-                    <span className=""><FaSignInAlt className="inline-block mr-2" />{item.label}</span>
+                    <span className=""><FaSignInAlt className="inline-block mr-2 " />{item.label}</span>
                 </button>
             ))}
         </div>
